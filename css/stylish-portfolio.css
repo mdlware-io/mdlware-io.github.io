@@ -162,6 +162,10 @@ hr.small {
     -o-background-size: cover;
 }
 
+.header img{
+    max-width: 100%;
+    height: auto;
+}
 /* About */
 
 .about {
