@@ -201,6 +201,7 @@ hr.small {
     -moz-background-size: cover;
     background-size: cover;
     -o-background-size: cover;
+    padding: 3rem 1rem;
 }
 
 /* Portfolio */
@@ -252,4 +253,15 @@ hr.small {
 
 footer {
     padding: 100px 0;
+    background-color: #dddddd;
+}
+
+.three-steps-list li{
+    list-style: none;
+    font-size: 3rem;
+    padding: 3rem;
+}
+
+.callout ul {
+    padding-left: 0;
 }
