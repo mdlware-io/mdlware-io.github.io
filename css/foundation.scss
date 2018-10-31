@@ -49,3 +49,13 @@
   @import "foundation/components/type";
   @import "foundation/components/offcanvas";
   @import "foundation/components/visibility";
+
+  [class*="block-grid-"] {
+    &.text-center {
+      > li {
+        float: none;
+        display: inline-block;
+      }
+    }
+  }
+  
