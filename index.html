@@ -1,3 +1,341 @@
 ---
-layout: front
+layout: default
+section_id: home
+slides:
+  - bg: images/sky.jpg
+    title:
+      klass: bottom-to-top
+      text: An exciting new BaaS solution, for POS, B2B and B2C sales
+    small_title:
+      klass: bottom-to-top
+      text: Launching Q4 2018
+    buttons:
+      klass: bottom-to-top
+      items:
+        - text: Join our mailing list
+          link_to: http://eepurl.com/dHVBIj
+
+partners:
+  - image: images/vaimo.png
+    title: Vaimo
+    link_to: https://www.vaimo.com/
+    klass: graphi-design
+    desc: Driving success in digital commerce
+  - image: images/magento.png
+    title: Magento
+    link_to: https://magento.com/ 
+    klass: graphi-design
+    desc: The world's most flexible eCommerce platform
+
+
+services:
+  - icon: angle-right
+    title: Step 1
+    desc: Create a new admin user for MDLware POS in your webstore
+  - icon: angle-right
+    title: Step 2
+    desc: We connect to your webstore via its API and sync your inventory to the retail app
+  - icon: angle-right
+    title: Step 3
+    desc: Install the app on your tablet and start selling!
+
+milestones:
+  - icon: folder-open
+    from: 0
+    to: 69
+    title: Projects Completed
+  - icon: coffee
+    from: 0
+    to: 726
+    title: Cups of coffee offered
+  - icon: thumbs-up
+    from: 0
+    to: 59
+    title: Happy clients
+  - icon: file-text
+    from: 0
+    to: 21
+    title: Articles Published
+
 ---
+
+
+<div class='mod modDefaultSlider'>
+  <div class='sequence' data-autostop='on' data-timeout='0'>
+    <a class='sequence-prev' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <a class='sequence-next' href='javascript:void(0);'>
+      <span></span>
+    </a>
+    <ul class='sequence-pagination'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign class = 'current' %}
+        {% else %}
+          {% assign class = '' %}
+        {% endif %}
+        <li class="{{class}}"></li>
+      {% endfor %}
+    </ul>
+    <ul class='sequence-canvas'>
+      {% for slide in page.slides %}
+        {% if forloop.first %}
+          {% assign style = 'static' %}
+        {% else %}
+          {% assign style = '' %}
+        {% endif %}
+
+        <li class='frame {{style}} {{ slide.klass }}'>
+          <div class='bg' style='background-image: url({{ slide.bg}});'></div>
+          <div class='small-title {{ slide.small_title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>{{ slide.small_title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='title {{ slide.title.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <h2>{{ slide.title.text }}</h2>
+              </div>
+            </div>
+          </div>
+          <div class='buttons-wrapper {{ slide.buttons.klass }}'>
+            <div class='row'>
+              <div class='large-12 columns'>
+                <div class='two spacing'></div>
+                {% for button in slide.buttons.items %}
+                  <a class='button {{ button.klass }}' href='{{ button.link_to }}'>{{ button.text }}</a>
+                {% endfor %}
+              </div>
+            </div>
+          </div>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+<div class="four spacing"></div>
+
+<div class="row">
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Mobile POS' desc='Device based POS allows your sales team to optimise their customer engagement, wherever they are' icon_class='fa fa-tablet' delay='0' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Point of Purchase' desc='More than just Point of Sale, our software means that your staff can provide customers with a richer buying experience, along with more up-sell and cross-sell opportunities' icon_class='fa fa-shopping-cart' delay='200' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Omnichannel' desc='Keep track of your customers from your website or store by linking their online baskets and in store purchases; you know what the customer has bought and when they bought it' icon_class='fa fa-expand' delay='400' shape_class='icon-text-circle' %}
+  </div>
+  <div class="medium-3 large-3 columns">
+    {% include icon-text.html title='Native UX' desc='User interface design following iOS and Material Design standards, aimed to provide an optimised sales experience and improve customer engagement through all channels' icon_class='fa fa-pencil' delay='600' shape_class='icon-text-circle' %}
+  </div>
+</div>
+
+<div class="spacing"></div>
+
+<div class="full" style="background: #f5f5f5;">
+  <div class="row">
+    <div class="large-12 columns">
+      {% include section-header.html title="Our partners" %}
+      <div class="spacing"></div>
+    </div>
+  </div>
+
+  <div class="mod modGallery">
+    <ul class="gallery small-block-grid-2 medium-block-grid-4 large-block-grid-6 text-center">
+      {% for partner in page.partners %}
+        <li class="{{ partner.klass }}">
+          <a href='{{ partner.link_to }}'>
+            <img alt="" src="{{ partner.image }}" />
+            <div class='overlay'>
+              <div class='thumb-info'>
+                <h3>{{ partner.title }}</h3>
+                <p>{{ partner.desc }}</p>
+              </div>
+            </div>
+          </a>
+        </li>
+      {% endfor %}
+    </ul>
+  </div>
+</div>
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="3 steps to success" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      <img class="fadeinleft" alt="" src="images/success.jpg" style="width: 100%;" />
+      <div class='three spacing'></div>
+    </div>
+    <div class='medium-6 columns'>
+      {% for service in page.services %}
+        <div class='fadein mod modIconText' data-delay='{{ 300 | times:forloop.index0 }}'>
+          <div class='icon-text-simple'>
+            <i class='fa fa-{{service.icon}}'></i>
+            <h3>{{service.title}}</h3>
+            <p>{{service.desc}}</p>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      {% endfor %}
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div>
+
+
+<!-- <div class='full parallax' style='background-image: url(images/@stock/milestone-bg.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Parallax effect" color="#fff" %}
+      <div class='spacing'></div>
+      <p class='centered-text' style='color: #ccc;'>
+        Dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
+      </p>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for milestone in page.milestones %}
+      <div class='medium-3 large-3 columns'>
+        <div class='mod modMilestone'>
+          <i class='fa fa-{{milestone.icon}}'></i>
+          <strong data-from='{{milestone.from}}' data-to='{{milestone.to}}'>&nbsp;</strong>
+          <span>{{milestone.title}}</span>
+          <div class='four spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+  <div class='two spacing'></div>
+</div> -->
+
+<!-- <div class='full'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our team" %}
+      <div class='spacing'></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
+      </p>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    {% for member in site.data.members %}
+      <div class='small-6 medium-3 large-3 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{ member.avatar }}" />
+            <div class='overlay'>
+              <div class='intro'>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+                <ul class='socials'>
+                  {% for social in member.socials %}
+                    <li>
+                      <a href='{{social.link}}'>
+                        <i class='fa fa-{{social.icon}}'></i>
+                      </a>
+                    </li>
+                  {% endfor %}
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div> -->
+
+<!-- <div class='full' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Our recent posts" %}
+      <div class='spacing'></div>
+      <p>
+        Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing. Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetuer sit amet magna adipiscing.
+      </p>
+      <div class='two spacing'></div>
+    </div>
+  </div>
+
+  <div class='row'>
+    {% for post in site.posts %}
+      {% if forloop.index > 3 %}
+        {% break %}
+      {% endif %}
+
+      <div class='large-4 medium-4 columns'>
+        <div class='mod modBlogPost'>
+          {% for image in post.images %}
+            {% unless forloop.first %}
+              {% break %}
+            {% endunless %}
+            <a href="{{post.url}}"><img alt="" src="{{image}}" /></a>
+          {% endfor %}
+          <div class='content'>
+            <p class='date'>{{post.date | date: "%B %d, %Y" }}</p>
+            <h4><a href="#">{{post.title}}</a></h4>
+            <p>{{post.excerpt}}</p> -->
+            <!--
+              <div class="tags">
+                {% for cat in post.categories %}
+                  <a href="#">{{cat | capitalize}}</a>
+                  {% unless forloop.last %}
+                    ,
+                  {% endunless %}
+                {% endfor %}
+              </div>
+            -->
+          <!-- </div>
+        </div>
+      </div>
+
+    {% endfor %}
+
+  </div> -->
+
+
+  <!-- <div class='two spacing'></div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <a class='button' href='blog.html'>See more posts</a>
+      </p>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+
+</div> -->
+
+
+<!-- {% include partners.html %} -->
+<!-- 
+
+<div class='full no-padding' style='background: #fff'>
+  <div class='two spacing'></div>
+  <div class='mod modCallToAction'>
+    <div class='row'>
+      <div class='medium-9 large-9 columns'>
+        <p>Like what you see here? Checkout this theme and start to build your site immediately.</p>
+      </div>
+      <div class='medium-3 large-3 columns'>
+        <a class='button' href='http://themeforest.net/user/honryou/portfolio?ref=honryou'>Learn more</a>
+      </div>
+    </div>
+  </div>
+  <div class='spacing'></div>
+</div> -->

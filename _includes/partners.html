@@ -1,0 +1,20 @@
+<div class='full parallax' style='background-image: url(images/partners.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="Partnered with" color="#333" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modClients' data-slides_to_show='2'>
+        <div class='clients'>
+          {% for partner in site.data.partners %}
+            <div><img alt="" src="{{partner.image}}" /></div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class='two spacing'></div>
+</div>
