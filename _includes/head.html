@@ -1,37 +1,37 @@
 <head>
-
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="An exciting new BaaS solution, for POS, B2B and B2C sales. Launching Q4 2018">
 
-  <title>MDLware.io</title>
+  <title>{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}</title>
+  <meta name="description" content="{% if page.excerpt %}{{ page.excerpt | strip_html | strip_newlines | truncate: 160 }}{% else %}{{ site.description }}{% endif %}">
 
-  <!-- Bootstrap Core CSS -->
-  <link href="css/bootstrap.min.css" rel="stylesheet">
-
-  <!-- Custom CSS -->
-  <link href="css/stylish-portfolio.css" rel="stylesheet">
-
-  <!-- Custom Fonts -->
-  <link href="font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
-  <link href="http://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,300italic,400italic,700italic" rel="stylesheet" type="text/css">
-
-  <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
-  <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
-  <!--[if lt IE 9]>
-    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
-    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
-  <![endif]-->
-
-  <meta property="og:title" content="MDLware.io">
-  <meta property="og:description" content="An exciting new BaaS solution, for POS, B2B and B2C sales. Launching Q4 2018">
-  <meta property="og:image" content="https://mdlware.io/img/sky.jpg">
-  <meta property="og:url" content="https://mdlware.io">
-  <meta name="twitter:title" content="MDLware.io">
-  <meta name="twitter:description" content="An exciting new BaaS solution, for POS, B2B and B2C sales. Launching Q4 2018">
-  <meta name="twitter:image" content="https://mdlware.io/img/sky.jpg">
-  <meta name="twitter:card" content="summary_large_image">
-
-  <link rel="icon" type="image/png" href="/img/MDLware.io-logo.png">
+  <link rel="stylesheet" href="{{ "/css/foundation.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/style.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/fontello.css" | prepend: site.baseurl }}">
+  <link rel="stylesheet" href="{{ "/css/font-awesome.css" | prepend: site.baseurl }}">
+  <script src="{{ "/javascripts/libs.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <script>
+    // terrificjs bootstrap
+    (function($) {
+        $(document).ready(function() {
+            var $page = $('body');
+            var config = {
+              dependencyPath: {
+                plugin: 'javascripts/'
+              }
+            }
+            var application = new Tc.Application($page, config);
+            application.registerModules();
+            application.start();
+        });
+    })(Tc.$);
+  </script>
+  <link href="http://fonts.googleapis.com/css?family=Raleway:400,700,300" media="screen" rel="stylesheet" type="text/css" />
+  <script src="{{ "/javascripts/masonry.pkgd.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <script src="{{ "/javascripts/imagesloaded.pkgd.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <script src="{{ "/javascripts/slick.min.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <script src="{{ "/javascripts/json2.js" | prepend: site.baseurl }}" type="text/javascript"></script>
+  <link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | prepend: site.baseurl | prepend: site.url }}" />
 </head>
