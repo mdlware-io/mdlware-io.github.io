@@ -1,0 +1,131 @@
+---
+layout: default
+title: POS Portfolio
+section_id: pos-portfolio
+works:
+  - image: images/screenshots/pos/square/1.jpg
+    title: Today
+    link_to: images/screenshots/pos/full/1.jpg
+    klass: tablet home
+    desc: User customisable
+  - image: images/screenshots/pos/square/2.jpg
+    title: Browse Categories
+    link_to: images/screenshots/pos/full/2.jpg
+    klass: tablet browse
+    desc: Browse to parent categories
+  - image: images/screenshots/pos/square/3.jpg
+    title: Category
+    link_to: images/screenshots/pos/full/3.jpg
+    klass: tablet category
+    desc: Masonry style category page
+  - image: images/screenshots/pos/square/4.jpg
+    title: Search
+    link_to: images/screenshots/pos/full/4.jpg
+    klass: tablet search browse
+    desc: Autocomplete search
+  - image: images/screenshots/pos/square/5.jpg
+    title: Product
+    link_to: images/screenshots/pos/full/5.jpg
+    klass: tablet product
+    desc: Full product info and gallery images
+  - image: images/screenshots/pos/square/6.jpg
+    title: Cart
+    link_to: images/screenshots/pos/full/6.jpg
+    klass: tablet cart
+    desc: Cart view, saved carts and barcode scanning to cart
+  - image: images/screenshots/pos/square/7.jpg
+    title: Customer options
+    link_to: images/screenshots/pos/full/7.jpg
+    klass: tablet checkout customer
+    desc: Create new, choose existing (Magento) or guest checkout
+  - image: images/screenshots/pos/square/8.jpg
+    title: Customer search
+    link_to: images/screenshots/pos/full/8.jpg
+    klass: tablet customer
+    desc: Search your existing (Magento) customers
+  - image: images/screenshots/pos/square/9.jpg
+    title: Customer view
+    link_to: images/screenshots/pos/full/9.jpg
+    klass: tablet customer
+    desc: View existing customer orders from Magento
+  - image: images/screenshots/pos/square/10.jpg
+    title: Reporting
+    link_to: images/screenshots/pos/full/10.jpg
+    klass: tablet reports
+    desc: Full cashup reporting on device
+  - image: images/screenshots/pos/square/11.jpg
+    title: Orders
+    link_to: images/screenshots/pos/full/11.jpg
+    klass: tablet orders
+    desc: View and reprint orders on device
+  - image: images/screenshots/pos/square/12.jpg
+    title: Cashup
+    link_to: images/screenshots/pos/full/12.jpg
+    klass: tablet reporting
+    desc: Manage multiple cashup sessions from device
+  - image: images/screenshots/pos/square/13.jpg
+    title: Checkout
+    link_to: images/screenshots/pos/full/13.jpg
+    klass: tablet checkout
+    desc: Split payments, quickly pay full balance
+  - image: images/screenshots/pos/square/14.jpg
+    title: Success
+    link_to: images/screenshots/pos/full/14.jpg
+    klass: tablet checkout
+    desc: Instant feedback with Magento order ID
+---
+
+
+<div class='full parallax' style='background-image: url(images/dots.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="MDLware POS" tagline="What retail in the 21st century should look like" color="#fff" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='tablet' href='#'>Tablet</a>
+          </li>
+          <li>
+            <a data-cat='browse' href='#'>Browse</a>
+          </li>
+          <li>
+            <a data-cat='home' href='#'>Home</a>
+          </li>
+        </ul>
+      </div>
+
+      <ul class='gallery large-block-grid-4 medium-block-grid-3 small-block-grid-2'>
+
+        {% for work in page.works %}
+          <li class="{{ work.klass }}">
+            <a href='{{ work.link_to }}'>
+              <img alt="" src="{{ work.image }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <h3>{{ work.title }}</h3>
+                  <p>{{ work.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+
+      </ul>
+
+    </div>
+  </div>
+
+  <div class='four spacing'></div>
+</div>

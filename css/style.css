@@ -3003,6 +3003,9 @@ form input.error, form textarea.error {
 .modGallery ul.gallery.seperated li {
   padding: 10px;
 }
+.modGallery li {
+  padding: 5px;
+}
 .modIconText .icon-text-circle {
   text-align: center;
 }
