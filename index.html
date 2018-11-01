@@ -14,7 +14,14 @@ slides:
       items:
         - text: Join our mailing list
           link_to: http://eepurl.com/dHVBIj
-
+  - bg: images/devices.jpg
+    title: 
+      klass: bottom-to-top
+      text: What RETAIL in the 21st Century should look like
+    small_title:
+      klass: bottom-to-top
+      text: No old fashioned POS tills
+  
 partners:
   - image: images/vaimo.png
     title: Vaimo
@@ -61,7 +68,7 @@ milestones:
 
 
 <div class='mod modDefaultSlider'>
-  <div class='sequence' data-autostop='on' data-timeout='0'>
+  <div class='sequence' data-autostop='off' data-timeout='3000'>
     <a class='sequence-prev' href='javascript:void(0);'>
       <span></span>
     </a>
@@ -91,7 +98,9 @@ milestones:
           <div class='small-title {{ slide.small_title.klass }}'>
             <div class='row'>
               <div class='large-12 columns'>
-                <h2>{{ slide.small_title.text }}</h2>
+                <h2>
+                  <span>{{ slide.small_title.text }}</span>
+                </h2>
               </div>
             </div>
           </div>
