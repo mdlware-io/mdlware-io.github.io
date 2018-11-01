@@ -2545,6 +2545,9 @@ form input.error, form textarea.error {
   letter-spacing: 2px;
   margin-bottom: 5px;
 }
+.modDefaultSlider .sequence .light-text h2 {
+  color: #fff
+}
 .modDefaultSlider .sequence .right {
   text-align: right;
 }
