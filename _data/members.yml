@@ -1,16 +1,16 @@
-- avatar: images/@stock/member-1.jpg
-  name: Mark Wayne
-  position: Founder
+- avatar: images/@stock/andrew.jpg
+  name: Andrew McLennan
+  position: CTO
   socials:
     - link: http://twitter.com
       icon: twitter
     - link: http://facebook.com
       icon: facebook
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-2.jpg
-  name: Kate Holms
-  position: Creative Director
+    Andrew is an experienced Director of Operations with a history of working in the information technology and services industries. He leads the technical team in all fields: from module builds, hosting environment set up and maintenance, optimisation of our ecommerce stores as well as steering our technical strategic plans towards app development.
+- avatar: images/@stock/simon.jpg
+  name: Simon Abbott
+  position: Chairman
   socials:
     - link: http://twitter.com
       icon: twitter
@@ -19,10 +19,10 @@
     - link: http://dribbble.com
       icon: dribbble
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-3.jpg
-  name: Tome Hason
-  position: Designer
+    A Chartered Accountant with over 20 years experience in the ERP and ecommerce businesses.
+- avatar: images/@stock/michelle.jpg
+  name: Michelle Picillo
+  position: CEO
   socials:
     - link: http://twitter.com
       icon: twitter
@@ -31,14 +31,14 @@
     - link: http://tumblr.com
       icon: tumblr
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-4.jpg
-  name: Lily Whrem
-  position: Developer
+    A business and marketing exec, which now pulls together various experiences in the ERP, ecommerce and accounting arenas.
+- avatar: images/@stock/rob.jpg
+  name: Rob McLean
+  position: System Architect
   socials:
     - link: http://twitter.com
       icon: twitter
     - link: http://facebook.com
       icon: facebook
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+    An experienced Lead BE Developer, with an unmatched skillset in custom app and integration development. 
