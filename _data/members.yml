@@ -7,7 +7,7 @@
     - link: http://facebook.com
       icon: facebook
   desc:
-    Andrew is an experienced Director of Operations with a history of working in the information technology and services industries. He leads the technical team in all fields: from module builds, hosting environment set up and maintenance, optimisation of our ecommerce stores as well as steering our technical strategic plans towards app development.
+    Andrew leads the technical team in all fields: from module builds, hosting environment set up and maintenance, optimisation of our ecommerce stores as well as steering our technical strategic plans towards app development.
 - avatar: images/@stock/simon.jpg
   name: Simon Abbott
   position: Chairman
@@ -32,7 +32,7 @@
       icon: tumblr
   desc:
     A business and marketing exec, which now pulls together various experiences in the ERP, ecommerce and accounting arenas.
-- avatar: images/@stock/rob.jpg
+- avatar: images/@stock/rob.png
   name: Rob McLean
   position: System Architect
   socials:
