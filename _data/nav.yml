@@ -7,6 +7,8 @@
 - name: About
   path: about-us.html
   section_id: about
-# - name: Blog
+- name: Services
+  path: services.html
+  section_id: services
 #   path: blog/
 #   section_id: blog
