@@ -3852,4 +3852,6 @@ body {
   .modFullscreenSlider .fullscreen_slideshow .video_wrap {
     display: none;
   }
+}.our-customers p{
+  font-size: 1.5rem;
 }
