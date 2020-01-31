@@ -1,0 +1,118 @@
+---
+layout: default
+title: About
+section_id: about
+skills:
+  - title: Web Development
+    percentage: 91
+  - title: Web integrations
+    percentage: 97
+  - title: Website Management
+    percentage: 80
+  - title: App development
+    percentage: 98
+testimonials:
+  - quote: Our decision to use ECS stemmed from a recommendation, for which we are very pleased to have acted upon. We were looking for an agency with extensive experience in working with Magento®, as this was our existing platform. ECS helped us to open up the potential of the site and we have experienced an increase in conversion rate of 150% and an increase in revenue of over 220% since they began work. We are looking to continue this level of growth and are confident that ECS are the company that can help to deliver this.
+    author: Michael Want - Thomas Lyte
+  
+---
+
+<div class='full parallax' style='background-image: url(images/@stock/sky.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='twelve columns'>
+      {% include section-header.html title="About us" color="#fff" tagline="Meet the amazingly skilled people we work with" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='medium-6 columns'>
+      <h3>Our history</h3>
+      <p>We are a UK based team, with over 35 years of ERP, Accounting, ecommerce and Business Systems experience between us.  Our expertise in knowing how businesses function on a core level, how the various business systems interact and often integrate has allowed us to develop this Software with yours and your customers' best interests at the fore.</p>
+      <p>Why use traditional Point of Sale tills and outdated peripheral hardware, with little or no link to information about their customers.
+        
+        In retail there's always so much emphasis on optimising the Customer’s experiences, but what about the Sales Teams' experiences (your b2b field sales team, your in store sales assistants, your self service Kiosk set up and even your van driver delivering to local stores/branches).  If you can arm them with a tool that can tell your end customers what they want to buy, or should be buying (all based on real data stored in your Magento and ERP systems) then we’re in a position where we’re revolutionising the sales cycle. 
+        
+        We felt that there was an opportunity to bridge the data gap between powerful, data rich ecommerce platforms and your most front facing tool in the business; your POS system.  So we embarked on a 3 year journey to develop a POS system which would meet today’s digital commerce needs. 
+        .</p>
+    </div>
+    <div class='medium-6 columns'>
+      <h3>Our skills</h3>
+      <div class='mod modBarGraph'>
+        <ul class='bars'>
+          {% for skill in page.skills %}
+            <li>
+              <h4 style=''>
+                {{skill.title}}
+                <strong>{{skill.percentage}}%</strong>
+              </h4>
+              <p class='highlighted' data-percent='{{skill.percentage}}'></p>
+            </li>
+          {% endfor %}
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    {% for member in site.data.members %}
+      <div class='small-6 medium-3 large-3 columns'>
+        <div class='mod modTeamMember'>
+          <div class='member'>
+            <img class="avatar" alt="" src="{{ member.avatar }}" />
+            <div class='overlay'>
+              <div class='intro'>
+                <h3>{{member.name}}</h3>
+                <p>{{member.position}}</p>
+              </div>
+            </div>
+          </div>
+          <p class='centered-text'>{{member.desc}}</p>
+          <div class='two spacing'></div>
+        </div>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+
+<!-- <div class='full parallax' style='background: #f5f5f5'>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <p class='centered-text'>
+        <i class='fa fa-quote-left' style='color: #F9CE06; font-size: 36px;'></i>
+      </p>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      {% include section-header.html title="What our clients say" %}
+      <div class='spacing'></div>
+    </div>
+  </div>
+  <div class='row'>
+    <div class='large-12 columns'>
+      <div class='mod modTestimonials'>
+        <div class='row'>
+          <div class='small-12 columns'>
+            <div class='items centered-text'>
+              {% for testimonial in page.testimonials %}
+                <div class='item'>
+                  <p class='quote'>"{{testimonial.quote}}"</p>
+                  <p class='author'>- {{testimonial.author}}</p>
+                  <div class='two spacing'></div>
+                </div>
+              {% endfor %}
+            </div>
+          </div>
+          <div class='spacing'></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div> -->
+

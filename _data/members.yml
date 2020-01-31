@@ -1,28 +1,27 @@
-- avatar: images/@stock/member-1.jpg
-  name: Mark Wayne
-  position: Founder
+# - avatar: images/@stock/andrew.jpg
+#   name: Andrew McLennan
+#   position: CTO
+#   socials:
+#     - link: http://twitter.com
+#       icon: twitter
+#     - link: http://facebook.com
+#       icon: facebook
+#   desc:
+#     Andrew leads the technical team in all fields...from module builds, hosting environment set up to maintenance and optimisation. 
+- avatar: images/@stock/ryan.png
+  name: Ryan Pluckrose
+  position: UX Developer
   socials:
     - link: http://twitter.com
       icon: twitter
     - link: http://facebook.com
       icon: facebook
+
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-2.jpg
-  name: Kate Holms
-  position: Creative Director
-  socials:
-    - link: http://twitter.com
-      icon: twitter
-    - link: http://facebook.com
-      icon: facebook
-    - link: http://dribbble.com
-      icon: dribbble
-  desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-3.jpg
-  name: Tome Hason
-  position: Designer
+    Senior FE and UX Developer, who can turn his hand to anything; with a focus on making your website or app come to life.
+- avatar: images/@stock/michelle.jpg
+  name: Michelle Picillo
+  position: CEO
   socials:
     - link: http://twitter.com
       icon: twitter
@@ -31,14 +30,24 @@
     - link: http://tumblr.com
       icon: tumblr
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
-- avatar: images/@stock/member-4.jpg
-  name: Lily Whrem
-  position: Developer
+    A business and marketing exec, which now pulls together various experiences in the ERP, ecommerce and accounting arenas.
+- avatar: images/@stock/rob.png
+  name: Rob McLean
+  position: Technical Architect
   socials:
     - link: http://twitter.com
       icon: twitter
     - link: http://facebook.com
       icon: facebook
   desc:
-    Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat consectetue.
+    Rob has many year's experience leading technical projects, including integrations with Magento and a broad selection of ERP and warehouse systems.  This experience led to him heading up the development of the MDLware BaaS software.
+- avatar: images/@stock/will.png
+  name: Will Man
+  position: Backend Developer
+  socials:
+    - link: http://twitter.com
+      icon: twitter
+    - link: http://facebook.com
+      icon: facebook
+  desc:
+    Will is a talented BE developer; experience with working on multiple platforms and software integrations.
