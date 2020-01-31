@@ -10,5 +10,10 @@
 - name: Services
   path: services.html
   section_id: services
+  section_id: pos-portfolio
+- name: Solutions
+  path: solutions.html
+  section_id: mdlware-solutions
+# - name: Blog
 #   path: blog/
 #   section_id: blog
