@@ -1,13 +1,13 @@
-- avatar: images/@stock/andrew.jpg
-  name: Andrew McLennan
-  position: CTO
-  socials:
-    - link: http://twitter.com
-      icon: twitter
-    - link: http://facebook.com
-      icon: facebook
-  desc:
-    Andrew leads the technical team in all fields...from module builds, hosting environment set up to maintenance and optimisation.
+# - avatar: images/@stock/andrew.jpg
+#   name: Andrew McLennan
+#   position: CTO
+#   socials:
+#     - link: http://twitter.com
+#       icon: twitter
+#     - link: http://facebook.com
+#       icon: facebook
+#   desc:
+#     Andrew leads the technical team in all fields...from module builds, hosting environment set up to maintenance and optimisation. 
 - avatar: images/@stock/ryan.png
   name: Ryan Pluckrose
   position: UX Developer
@@ -18,7 +18,7 @@
       icon: facebook
 
   desc:
-    A competent Front End Developer with a focus on making your website or app come to life.
+    Senior FE and UX Developer, who can turn his hand to anything; with a focus on making your website or app come to life.
 - avatar: images/@stock/michelle.jpg
   name: Michelle Picillo
   position: CEO
@@ -33,11 +33,21 @@
     A business and marketing exec, which now pulls together various experiences in the ERP, ecommerce and accounting arenas.
 - avatar: images/@stock/rob.png
   name: Rob McLean
-  position: System Architect
+  position: Technical Architect
   socials:
     - link: http://twitter.com
       icon: twitter
     - link: http://facebook.com
       icon: facebook
   desc:
-    An experienced Lead BE Developer, with an unmatched skillset in custom app and integration development. 
+    Rob has many year's experience leading technical projects, including integrations with Magento and a broad selection of ERP and warehouse systems.  This experience led to him heading up the development of the MDLware BaaS software.
+- avatar: images/@stock/will.png
+  name: Will Man
+  position: Backend Developer
+  socials:
+    - link: http://twitter.com
+      icon: twitter
+    - link: http://facebook.com
+      icon: facebook
+  desc:
+    Will is a talented BE developer; experience with working on multiple platforms and software integrations.
