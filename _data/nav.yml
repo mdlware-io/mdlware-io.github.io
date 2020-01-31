@@ -3,14 +3,13 @@
   section_id: home
 - name: POS
   path: pos.html
-  section_id: pos
+  section_id: pos-portfolio
 - name: About
   path: about-us.html
   section_id: about
 - name: Services
   path: services.html
   section_id: services
-  section_id: pos-portfolio
 - name: Solutions
   path: solutions.html
   section_id: mdlware-solutions
