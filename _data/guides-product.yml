@@ -1,71 +1,71 @@
-- gif: images/gifs/Trading/sidecart--add-configurable-items.gif
-  link_to: images/gifs/Trading/sidecart--add-configurable-items.gif
+- gif: images/gifs/Trading/sidecart--add-configurable-items-min.gif
+  link_to: images/gifs/Trading/sidecart--add-configurable-items-min.gif
   klass: product browse
   name: Feature - Add Configurable products
   desc:
     Some products have options that need selecting before being added, you can choose these in a modal that is presented when the produt is pressed. If you have a barcode scanner then these producs can just be scanned in instantly.
 
-- gif: images/gifs/Trading/sidecart--add-items.gif
-  link_to: images/gifs/Trading/sidecart--add-items.gif
+- gif: images/gifs/Trading/sidecart--add-items-min.gif
+  link_to: images/gifs/Trading/sidecart--add-items-min.gif
   klass: product browse settings
   name: Feature - Persistent Cart and Quickadd
   desc:
     With the persistent cart view enabled along with the quickadd feature, you can quickly add products and also view the cart summary at all times.
-- gif: images/gifs/Trading/sidecart--list-sorting.gif
-  link_to: images/gifs/Trading/sidecart--list-sorting.gif
+- gif: images/gifs/Trading/sidecart--list-sorting-min.gif
+  link_to: images/gifs/Trading/sidecart--list-sorting-min.gif
   klass: product browse
   name: Feature - Sort products in categories
   desc:
     Using the Name and Bestseller options you can sort the products using the Ascending and Descending buttons.
 
-- gif: images/gifs/Trading/sidecart--browse-modal.gif
-  link_to: images/gifs/Trading/sidecart--browse-modal.gif
+- gif: images/gifs/Trading/sidecart--browse-modal-min.gif
+  link_to: images/gifs/Trading/sidecart--browse-modal-min.gif
   klass: product browse search
   name: Feature - Browse categories
   desc:
     With the browse modal you can navigate all the categories which are pulled through to the app.
 
-- gif: images/gifs/Trading/sidecart--browse-modal-and-search.gif
-  link_to: images/gifs/Trading/sidecart--browse-modal-and-search.gif
+- gif: images/gifs/Trading/sidecart--browse-modal-and-search-min.gif
+  link_to: images/gifs/Trading/sidecart--browse-modal-and-search-min.gif
   klass: product browse search
   name: Feature - Browse & Search
   desc:
     With the browse modal open you can search for any product in the database and add it from this screen.
 
 
-- gif: images/gifs/Trading/sidecart-buttons-add-items.gif
-  link_to: images/gifs/Trading/sidecart-buttons-add-items.gif
+- gif: images/gifs/Trading/sidecart-buttons-add-items-min.gif
+  link_to: images/gifs/Trading/sidecart-buttons-add-items-min.gif
   klass: product
   name: Feature - Update product quantities and also remove them
   desc:
     Using the + / - buttons you can update the quantities in the cart instantly.
-- gif: images/gifs/Trading/sidecart--barcode-add-items.gif
-  link_to: images/gifs/Trading/sidecart--barcode-add-items.gif
+- gif: images/gifs/Trading/sidecart--barcode-add-items-min.gif
+  link_to: images/gifs/Trading/sidecart--barcode-add-items-min.gif
   klass: product
   name: Feature - Add products with a barcode scanner
   desc:
     Products can be added using a barcode scanner or by manually typing in the barcode into the field.
-- gif: images/gifs/Trading/sidecart--alter-price-discount-items.gif
-  link_to: images/gifs/Trading/sidecart--alter-price-discount-items.gif
+- gif: images/gifs/Trading/sidecart--alter-price-discount-items-min.gif
+  link_to: images/gifs/Trading/sidecart--alter-price-discount-items-min.gif
   klass: product
   name: Feature - Edit price of products
   desc:
     You can directly edit the price of a product using this method provided you have a managers login or have been granted access by one.
-- gif: images/gifs/Trading/sidecart--fixed-discount-items.gif
-  link_to: images/gifs/Trading/sidecart--fixed-discount-items.gif
+- gif: images/gifs/Trading/sidecart--fixed-discount-items-min.gif
+  link_to: images/gifs/Trading/sidecart--fixed-discount-items-min.gif
   klass: product
   name: Feature - Add fixed amount discount
   desc:
     You can add a fixed amount discount to a product using this method provided you have a managers login or have been granted access by one.
-- gif: images/gifs/Trading/sidecart--save-and-load-cart.gif
-  link_to: images/gifs/Trading/sidecart--save-and-load-cart.gif
+- gif: images/gifs/Trading/sidecart--save-and-load-cart-min.gif
+  link_to: images/gifs/Trading/sidecart--save-and-load-cart-min.gif
   klass: product cart
   name: Feature - Load saved carts
   desc:
     You have the ability to name and save as many carts as you like and then the ability to load them at any time.
-- gif: images/gifs/Trading/sidecart--list-item-features.gif
-  link_to: images/gifs/Trading/sidecart--list-item-features.gif
+- gif: images/gifs/Trading/sidecart--list-item-features-min.gif
+  link_to: images/gifs/Trading/sidecart--list-item-features-min.gif
   klass: product settings browse
   name: Feature - Add colour label to products
   desc:
-    Using this setting you can add various colour banners to groups of products.
+    Using this setting you can dd various colour banners to groups of products.

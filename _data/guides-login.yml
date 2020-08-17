@@ -1,24 +1,24 @@
 
-- gif: images/gifs/Login/login--invalid-pass.gif
-  link_to: images/gifs/Login/login--invalid-pass.gif
+- gif: images/gifs/Login/login--invalid-pass-min.gif
+  link_to: images/gifs/Login/login--invalid-pass-min.gif
   klass: login
   name: Invalid login attempt
   desc:
     An invalid login attempt will show a small popup message to the user
-- gif: images/gifs/Login/login--valid-login.gif
-  link_to: images/gifs/Login/login--valid-login.gif
+- gif: images/gifs/Login/login--valid-login-min.gif
+  link_to: images/gifs/Login/login--valid-login-min.gif
   klass: login
   name: Successful login
   desc:
     Upon successfully logging in, users will be taken to the homepage
-- gif: images/gifs/Login/logout--timout.gif
-  link_to: images/gifs/Login/logout--timout.gif
+- gif: images/gifs/Login/logout--timout-min.gif
+  link_to: images/gifs/Login/logout--timout-min.gif
   klass: login
   name: Logout after timeout
   desc:
     After reaching the idle timeout value defined in settings, users will have a chance to stop the till locking.
-- gif: images/gifs/Home/home--resume-login.gif
-  link_to: images/gifs/Home/home--resume-login.gif
+- gif: images/gifs/Home/home--resume-login-min.gif
+  link_to: images/gifs/Home/home--resume-login-min.gif
   klass: login
   name: Resuming a session
   desc:
