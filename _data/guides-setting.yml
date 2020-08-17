@@ -1,0 +1,18 @@
+- gif: images/gifs/Trading/settings-start-tradingsession.gif
+  link_to: images/gifs/Trading/settings-start-tradingsession.gif
+  klass: settings 
+  name: Feature - Start a Trading Session
+  desc:
+    At the start of trading you must first open a session on the relevant cash drawer.
+- gif: images/gifs/Settings/Settings--view-orders-and-sort.gif
+  link_to: images/gifs/Settings/Settings--view-orders-and-sort.gif
+  klass: settings orders
+  name: Feature - View and Filter Orders
+  desc:
+    View all orders that have been placed in settings, you can also filter them by Receipt, Order or Customer name.
+- gif: images/gifs/Settings/Settings--z-reports.gif
+  link_to: images/gifs/Settings/Settings--z-reports.gif
+  klass: settings
+  name: Feature - View Z Reports
+  desc:
+    View the latest Z Reports with the ability to see a summary of orders and totals from the session.

@@ -1,0 +1,155 @@
+---
+layout: default
+title: Guides
+section_id: guides
+---
+
+<div class='full parallax' style='background-image: url(images/@stock/sky.jpg); color: #fff;'>
+  <div class='row'>
+    <div class='twelve columns'>
+      {% include section-header.html title="Guides & GIFs" color="#fff" tagline="View our collection of handy gifs" class="big" %}
+    </div>
+  </div>
+  <div class='four spacing'></div>
+</div>
+
+<div class='full'>
+  <div class='row'>
+    <div class='mod modGallery'>
+      <!-- <div class='gallery-nav'>
+        <ul>
+          <li class='current'>
+            <a data-cat='all' href='#'>All</a>
+          </li>
+          <li>
+            <a data-cat='home' href='#'>Home</a>
+          </li>
+          <li>
+            <a data-cat='browse' href='#'>Browse</a>
+          </li>
+          <li>
+            <a data-cat='search' href='#'>Search</a>
+          </li>
+          <li>
+            <a data-cat='product' href='#'>Product</a>
+          </li>
+          <li>
+            <a data-cat='cart' href='#'>Cart</a>
+          </li>
+          <li>
+            <a data-cat='checkout' href='#'>Checkout</a>
+          </li>
+          <li>
+            <a data-cat='customer' href='#'>Customer</a>
+          </li>
+          <li>
+            <a data-cat='reports' href='#'>Reports</a>
+          </li>
+          <li>
+            <a data-cat='orders' href='#'>Orders</a>
+          </li>
+          <li>
+            <a data-cat='login' href='#'>Login</a>
+          </li>
+          <li>
+            <a data-cat='settings' href='#'>Settings</a>
+          </li>
+        </ul>
+      </div> -->
+
+      <div class='row'>
+        <div class='large-12 columns text-center'>
+          <h2>Login</h2>
+        </div>
+      </div>
+      <ul class='gallery medium-block-grid-2 small-block-grid-1'>
+        {% for guide-login in site.data.guides-login %}
+          <li class="{{ guide-login.klass }}">
+            <div class='two spacing'></div>
+            <h3 class="text-center">{{ guide-login.name }}</h3>
+            <a href='{{ guide-login.link_to }}'>
+              <img alt="" src="{{ guide-login.gif }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <p>{{ guide-login.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class='row'>
+        <div class='large-12 columns text-center'>
+          <div class='four spacing'></div>
+          <h2>Home</h2>
+        </div>
+      </div>
+      <ul class='gallery medium-block-grid-2 small-block-grid-1'>
+        {% for guide-home in site.data.guides-home %}
+          <li class="{{ guide-home.klass }}">
+            <div class='two spacing'></div>
+            <h3 class="text-center">{{ guide-home.name }}</h3>
+            <a href='{{ guide-home.link_to }}'>
+              <img alt="" src="{{ guide-home.gif }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <p>{{ guide-home.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+
+      <div class='row'>
+        <div class='large-12 columns text-center'>
+          <div class='four spacing'></div>
+          <h2>Products</h2>
+        </div>
+      </div>
+      <div class='four spacing'></div>
+      <ul class='gallery medium-block-grid-2 small-block-grid-1'>
+        {% for guide-product in site.data.guides-product %}
+          <li class="{{ guide-product.klass }}">
+            <div class='two spacing'></div>
+            <h3 class="text-center">{{ guide-product.name }}</h3>
+            <a href='{{ guide-product.link_to }}'>
+              <img alt="" src="{{ guide-product.gif }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <p>{{ guide-product.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      
+      <div class='row'>
+        <div class='large-12 columns text-center'>
+          <div class='four spacing'></div>
+          <h2>Settings</h2>
+        </div>
+      </div>
+      <div class='four spacing'></div>
+      <ul class='gallery medium-block-grid-2 small-block-grid-1'>
+        {% for guide-setting in site.data.guides-setting %}
+          <li class="{{ guide-setting.klass }}">
+            <div class='two spacing'></div>
+            <h3 class="text-center">{{ guide-setting.name }}</h3>
+            <a href='{{ guide-setting.link_to }}'>
+              <img alt="" src="{{ guide-setting.gif }}" />
+              <div class='overlay'>
+                <div class='thumb-info'>
+                  <p>{{ guide-setting.desc }}</p>
+                </div>
+              </div>
+            </a>
+          </li>
+        {% endfor %}
+      </ul>
+      
+    </div>
+  </div>
+</div>

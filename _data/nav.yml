@@ -4,6 +4,9 @@
 - name: POS
   path: pos.html
   section_id: pos-portfolio
+- name: Guides
+  path: guides.html
+  section_id: guides
 - name: About
   path: about-us.html
   section_id: about

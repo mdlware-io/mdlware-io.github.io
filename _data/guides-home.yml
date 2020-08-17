@@ -1,0 +1,30 @@
+- gif: images/gifs/Home/home--scroll.gif
+  link_to: images/gifs/Home/home--scroll.gif
+  klass: home
+  name: Showcasing the homepage
+  desc:
+    Scrolling through the homepage showing the various layouts.
+- gif: images/gifs/Home/home--grid.gif
+  link_to: images/gifs/Home/home--grid.gif
+  klass: home
+  name: Feature - Edit the Homepage Tiles
+  desc:
+    Here we have the ability to change the layout of the homepage by dragging and dropping tiles and also updating the information displayed on the tiles.
+- gif: images/gifs/Home/home--swap-to-persistent-cart.gif
+  link_to: images/gifs/Home/home--swap-to-persistent-cart.gif
+  klass: home cart settings
+  name: Feature - Change view type
+  desc:
+    This shows the different views that can be used to use the app. A permanent sidecart or just a modal to be appear when needed.
+- gif: images/gifs/Trading/fullscreen--add-items-and-modal-cart.gif
+  link_to: images/gifs/Trading/fullscreen--add-items-and-modal-cart.gif
+  klass: home browse settings
+  name: Feature - Fullscreen Trading
+  desc:
+    One of the views allows items to fill the whole viewport and you can summon the cart from a modal in the toolbar. You can also allow product detail modals if not using the quickadd feature.
+- gif: images/gifs/User options/user--logout.gif
+  link_to: images/gifs/User options/user--logout.gif
+  klass: settings login home
+  name: Feature - Log out user
+  desc:
+    Pressing the user icon gives the option to print a No Sale or to logout of the app.
